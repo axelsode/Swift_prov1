@@ -15,6 +15,9 @@
 		776E60C725AC696C00471774 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776E60C525AC696C00471774 /* LaunchScreen.storyboard */; };
 		776E60D225AC696C00471774 /* Swift_prov1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E60D125AC696C00471774 /* Swift_prov1Tests.swift */; };
 		776E60DD25AC696C00471774 /* Swift_prov1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E60DC25AC696C00471774 /* Swift_prov1UITests.swift */; };
+		776E60F025AC698800471774 /* Board.png in Resources */ = {isa = PBXBuildFile; fileRef = 776E60ED25AC698800471774 /* Board.png */; };
+		776E60F125AC698800471774 /* Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 776E60EE25AC698800471774 /* Cross.png */; };
+		776E60F225AC698800471774 /* Nought.png in Resources */ = {isa = PBXBuildFile; fileRef = 776E60EF25AC698800471774 /* Nought.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		776E60D825AC696C00471774 /* Swift_prov1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_prov1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		776E60DC25AC696C00471774 /* Swift_prov1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_prov1UITests.swift; sourceTree = "<group>"; };
 		776E60DE25AC696C00471774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		776E60ED25AC698800471774 /* Board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Board.png; sourceTree = "<group>"; };
+		776E60EE25AC698800471774 /* Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cross.png; sourceTree = "<group>"; };
+		776E60EF25AC698800471774 /* Nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nought.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				776E60C325AC696C00471774 /* Assets.xcassets */,
 				776E60C525AC696C00471774 /* LaunchScreen.storyboard */,
 				776E60C825AC696C00471774 /* Info.plist */,
+				776E60ED25AC698800471774 /* Board.png */,
+				776E60EE25AC698800471774 /* Cross.png */,
+				776E60EF25AC698800471774 /* Nought.png */,
 			);
 			path = Swift_prov1;
 			sourceTree = "<group>";
@@ -231,7 +240,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776E60F225AC698800471774 /* Nought.png in Resources */,
+				776E60F025AC698800471774 /* Board.png in Resources */,
 				776E60C725AC696C00471774 /* LaunchScreen.storyboard in Resources */,
+				776E60F125AC698800471774 /* Cross.png in Resources */,
 				776E60C425AC696C00471774 /* Assets.xcassets in Resources */,
 				776E60C225AC696900471774 /* Main.storyboard in Resources */,
 			);
