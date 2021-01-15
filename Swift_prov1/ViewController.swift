@@ -1,40 +1,43 @@
-//
-//  ViewController.swift
-//  Swift_prov1
-//
-//  Created by Axel Söderberg on 2021-01-11.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+    var namePlayer1 : String?
+    var namePlayer2 : String?
     var playerNow = 1 //1 = nought play pice 2 = cross game pice
     var game = [0,0,0,0,0,0,0,0,0] //list of all pieces
     var gamePlaying = true
     
     let winnerCombination = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
     
-    @IBAction func player1Label(_ sender: Any) {
-    }
-    @IBAction func player2Label(_ sender: Any) {
-    }
+    @IBOutlet weak var Player1: UILabel!
+    @IBOutlet weak var Player2: UILabel!
+    
     @IBOutlet weak var playerWinLabel: UILabel!
-    @IBAction func action(_ sender: Any) {
+    
+    @IBAction func action(_ sender: Any) { //all 9 buttons connected to this action
+        
         
         if(game[(sender as AnyObject).tag-1] == 0 && gamePlaying == true)
         {
             game[(sender as AnyObject).tag-1] = playerNow //only 1 press
             
+            playerWinLabel.text = "Player 1 to go"
+            playerWinLabel.isHidden = false
+            
             if (playerNow == 1)
             {
                 (sender as AnyObject).setImage(UIImage(named: "Nought.png"), for: UIControl.State())
+                playerWinLabel.text = "Player 2 to play"
+                
                 playerNow = 2
             }
-            else{
+            if (playerNow == 2){
                 (sender as AnyObject).setImage(UIImage(named: "Cross.png"), for: UIControl.State())
+                playerWinLabel.text = "Player 1 to play"
                 playerNow = 1
             }
+            playerWinLabel.isHidden = false
         }
         
         for comb in winnerCombination {
@@ -44,12 +47,12 @@ class ViewController: UIViewController {
                 
                 if game[comb[0]] == 1{
                     // nought win
-                    playerWinLabel.text = "Nought has won"
+                    playerWinLabel.text = "Player 1 has won"
                     
                 }
-                else {
+                if game[comb[0]] == 2 {
                     //cross win
-                    playerWinLabel.text = "Cross has won"
+                    playerWinLabel.text = "Player 2 has won"
                 }
                 
                 restartButton.isHidden = false
@@ -85,19 +88,22 @@ class ViewController: UIViewController {
         playerWinLabel.isHidden = true
         restartButton.isHidden = true
         
+        //looping threw all the views and setting them to buttons
         for i in 1...9 {
             let button = view.viewWithTag(i) as! UIButton
             button.setImage(nil, for: UIControl.State())
         }
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+        	
+    @IBAction func Exit(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+        
+    }
 
 }
 

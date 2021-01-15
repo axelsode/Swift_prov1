@@ -18,6 +18,7 @@
 		776E60F025AC698800471774 /* Board.png in Resources */ = {isa = PBXBuildFile; fileRef = 776E60ED25AC698800471774 /* Board.png */; };
 		776E60F125AC698800471774 /* Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 776E60EE25AC698800471774 /* Cross.png */; };
 		776E60F225AC698800471774 /* Nought.png in Resources */ = {isa = PBXBuildFile; fileRef = 776E60EF25AC698800471774 /* Nought.png */; };
+		776E610725B1A12B00471774 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E610625B1A12B00471774 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		776E60ED25AC698800471774 /* Board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Board.png; sourceTree = "<group>"; };
 		776E60EE25AC698800471774 /* Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cross.png; sourceTree = "<group>"; };
 		776E60EF25AC698800471774 /* Nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nought.png; sourceTree = "<group>"; };
+		776E610625B1A12B00471774 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				776E60ED25AC698800471774 /* Board.png */,
 				776E60EE25AC698800471774 /* Cross.png */,
 				776E60EF25AC698800471774 /* Nought.png */,
+				776E610625B1A12B00471774 /* ViewController2.swift */,
 			);
 			path = Swift_prov1;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				776E60BF25AC696900471774 /* ViewController.swift in Sources */,
+				776E610725B1A12B00471774 /* ViewController2.swift in Sources */,
 				776E60BB25AC696900471774 /* AppDelegate.swift in Sources */,
 				776E60BD25AC696900471774 /* SceneDelegate.swift in Sources */,
 			);
